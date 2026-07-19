@@ -2,7 +2,7 @@ const clickbutton = document.getElementById("button");
 let random_password = document.getElementById("result");
 function generate() {
 
-    //Creating 1 character UpperCase letter 
+    //1 UpperCase letter 
     let upper_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     // length of characters
@@ -16,7 +16,7 @@ function generate() {
 
     console.log(random_index_num1);
 
-    //creating 3 lowerCase letter 
+    //3 lowerCase letter 
     let lower_letters = "abcdefghijklmnopqrstuvwxyz";
 
     //length of lower letters
@@ -28,7 +28,15 @@ function generate() {
         let random_index_num2 = lower_letters[random_index2];
         console.log(random_index_num2);
     }
-    
+
+    //random symbols
+    let symbols = "!@#$%";
+    length_symbols = symbols.length;
+    let symbol_random = Math.floor(Math.random()*length_symbols);
+    let symbol_char = symbols[symbol_random];
+    console.log(symbol_char);
 }
+
+
 
 
