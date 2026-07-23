@@ -18,16 +18,19 @@ function generate() {
 
     //3 lowerCase letter 
     let lower_letters = "abcdefghijklmnopqrstuvwxyz";
-
+    let result2 = "";
     //length of lower letters
     length2 = lower_letters.length;
 
     //for loop for creating three random lowerCase letters
     for (let i = 0; i < 3; i++) {
+
         let random_index2 = Math.floor(Math.random() * length2);
-        let random_index_num2 = lower_letters[random_index2];
-        console.log(random_index_num2);
+        result2 += lower_letters[random_index2];
+
     }
+
+
 
     //random symbols
     let symbols = "!@#$%";
@@ -38,13 +41,15 @@ function generate() {
 
     //4 Numbers 
     let Numbers = "01234567890";
+    let result3 = "";
     let Numbers_length = Numbers.length;
     for (let i = 0; i < 4; i++) {
         let random_no = Math.floor(Math.random() * Numbers_length);
-        let random_no_index = Numbers[random_no];
-        console.log(random_no_index);
+        result3 += Numbers[random_no];
+
     }
 
+    random_password.innerHTML = `Random Password : ${random_index_num1}${symbol_char}${result2}${result3}  `
 }
 
 
