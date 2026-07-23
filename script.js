@@ -32,9 +32,19 @@ function generate() {
     //random symbols
     let symbols = "!@#$%";
     length_symbols = symbols.length;
-    let symbol_random = Math.floor(Math.random()*length_symbols);
+    let symbol_random = Math.floor(Math.random() * length_symbols);
     let symbol_char = symbols[symbol_random];
     console.log(symbol_char);
+
+    //4 Numbers 
+    let Numbers = "01234567890";
+    let Numbers_length = Numbers.length;
+    for (let i = 0; i < 4; i++) {
+        let random_no = Math.floor(Math.random() * Numbers_length);
+        let random_no_index = Numbers[random_no];
+        console.log(random_no_index);
+    }
+
 }
 
 
